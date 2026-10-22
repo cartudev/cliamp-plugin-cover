@@ -79,9 +79,9 @@ stay = false
 
 ## Screenshots
 
-| Kitty image | Text blocks |
+| Kitty image | ANSI blocks |
 |---|---|
-| _screenshots/kitty.png_ | _screenshots/blocks.png_ |
+| ![Cover pane next to the spectrum via the kitty graphics protocol](screenshots/kitty.png) | ![The same cover as ANSI half blocks](screenshots/blocks.png) |
 
 ## How it works
 
