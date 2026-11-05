@@ -12,26 +12,18 @@ Two renderers, switched from the plugin's own menu:
 
 ## Requirements
 
-This plugin uses a plugin API that is **not in cliamp yet**. It needs the core
-PR to be merged (or the branch built locally):
+A build of cliamp that includes the plugin pane API. That landed on `main` in
+[#652](https://github.com/bjarneo/cliamp/pull/652) (2026-10-22): `cliamp.layout`,
+`cliamp.image`, `cliamp.ui.select` and `cliamp.vis`. Cover URLs come from
+`cliamp.track.album_art_url()`, documented in
+[#654](https://github.com/bjarneo/cliamp/pull/654).
 
-- PR: [`feat(plugins): let plugins build panes, images and selectors`](https://github.com/bjarneo/cliamp/pull/652)
-
-Until that lands, the plugin cannot run on a stock cliamp: `cliamp.layout`,
-`cliamp.image`, `cliamp.ui.select`, `cliamp.vis.set/list` and
-`cliamp.track.album_art_url()` do not exist upstream. Building the branch from
-that PR is enough:
-
-```sh
-git clone https://github.com/cartudev/cliamp
-cd cliamp
-git switch feat/plugin-panes
-make install
-```
+The latest release, v2.3.0, is older than that. This plugin does not run there.
+Build `main`, or install a release tagged after #652.
 
 ## Install
 
-With a build that includes the PR:
+On that build:
 
 ```sh
 cliamp plugins install cartudev/cliamp-plugin-cover
